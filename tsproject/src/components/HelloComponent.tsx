@@ -1,14 +1,14 @@
-import HelloComponent from './components/HelloComponent'
-import './App.css'
-
-function App() {
-
-  return (
-    <>
-      <HelloComponent name="차일" age={20} />
-    </>
-  )
-}
-
-export default App
+type HelloProps = {
+    name: string;
+    age: number;
+  };
+  
+  export default function HelloComponent({ name, age }: HelloProps) {
+  
+    return (
+      <>
+        <h1>Hello Component!</h1>
+        <h2>{name}! {age} 살이네요 !</h2>
+      </>
+    );
   }

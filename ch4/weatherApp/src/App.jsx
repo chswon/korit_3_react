@@ -2,9 +2,9 @@ import { useEffect, useState } from "react"
 
 function App() {
   const [weather, setweather] = useState({
-    temp: '',
-    desc: '',
-    icon: ''
+    temp: number',
+    desc: string,
+    icon: string
   });
    useEffect(() => {
     fetch('https://api.openweathermap.org/data/2.5/weather?q=Busan&units=Meric&APIkey=cea70c491e48297c787604d01853ccec')

@@ -2,6 +2,7 @@ import Footer from './Footer'
 import Header from './Header'
 import MainComponent from './MainComponent'
 import "./App.css"
+import "./index.css"
 
 function App() {
   return (
